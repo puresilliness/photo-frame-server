@@ -1,0 +1,6 @@
+# This maps the photo email address to a script that has the email piped to it
+#   1. adjust the path to your needs
+#   2. newaliases
+#   3. /etc/init.d/postfix restart
+
+photo: "|/home/application/src/repos/github/puresilliness/photo-frame-server/mda_bridge.py"

@@ -1,0 +1,5 @@
+# You can use the virtual file to map a regex to a delivery username:
+#   1. postmap /etc/postfix/virtual
+#   2. /etc/init.d/postfix restart
+
+photo@puresilliness.com photo
