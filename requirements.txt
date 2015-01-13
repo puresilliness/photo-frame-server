@@ -1,0 +1,8 @@
+# apt-get install libzmq-dev cython
+# pip install -r requirements.txt
+
+cython
+gevent
+sqlalchemy
+pyzmq
+# if using postgresql: psycopg2
