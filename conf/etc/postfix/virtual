@@ -2,4 +2,4 @@
 #   1. postmap /etc/postfix/virtual
 #   2. /etc/init.d/postfix restart
 
-photo@puresilliness.com photo
+photo@puresilliness.com application

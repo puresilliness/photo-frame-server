@@ -3,4 +3,4 @@
 #   2. newaliases
 #   3. /etc/init.d/postfix restart
 
-photo: "|/home/application/src/repos/github/puresilliness/photo-frame-server/mda_bridge.py"
+application: "|/usr/bin/python /home/application/src/photo-frame-server/mda_bridge.py"
