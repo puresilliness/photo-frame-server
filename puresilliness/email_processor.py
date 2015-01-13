@@ -11,6 +11,7 @@ import traceback
 import uuid
 
 from puresilliness.model import SESSION, User, AuthorizedEmail, Photo
+import puresilliness.util
 
 gevent.monkey.patch_all()
 
@@ -148,6 +149,10 @@ if __name__ == "__main__":
     global LOG
     logging.config.fileConfig(LOGGING_CONF)
     LOG = logging.getLogger()
+
+    for handler in LOG.handlers:
+        if handler.level < logging.ERROR:
+            handler.addFilter(puresilliness.util.ErrorFilter())
 
     LOG.info("Starting mail processor")
 
